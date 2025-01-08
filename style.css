@@ -1,6 +1,94 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/roboto-thin-webfont.woff2') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/roboto-thinitalic-webfont.woff2') format('woff2');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/roboto-light-webfont.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/roboto-lightitalic-webfont.woff2') format('woff2');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/roboto-regular-webfont.woff2') format('woff2');
+    font-weight: normal; /* 400 */
+    font-style: normal;
+}
+
+/* regular italic missing*/
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/roboto-medium-webfont.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/roboto-mediumitalic-webfont.woff2') format('woff2');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/roboto-bold-webfont.woff2') format('woff2');
+    font-weight: bold; /* 700 */
+    font-style: normal;
+}
+
+/* bold italic missing */
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/roboto-black-webfont.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/roboto-blackitalic-webfont.woff2') format('woff2');
+    font-weight: 900;
+    font-style: italic;
+}
+
+:root {
+    --color-text-normal: #000000;
+}
+
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body, html {
+    overflow: hidden;
 }
 
 ul {
@@ -24,7 +112,7 @@ header {
     grid-row: 2 / 3;
     grid-column: 2 / 3;
     
-    color: #000000;
+    color: var(--color-text-normal);
 }
 
 .sidebar {
@@ -40,5 +128,5 @@ main {
     grid-row: 3 / 4;
     grid-column: 2 / 3;
 
-    color: #000000;
+    color: var(--color-text-normal);
 }
