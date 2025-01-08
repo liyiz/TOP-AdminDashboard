@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    border:1px solid red;
+
+    display: grid;
+    grid-template-rows: 150px 208px 1692px;
+    grid-template-columns: 1fr 4fr;
+}
+
+header {
+    background: #be8080;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+}
+
+.banner {
+    background: #beb380;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;    
+}
+
+.sidebar {
+    background: #8091be;
+    grid-row: 1 / 4;
+    grid-column: 1 / 2;
+}
+
+main {
+    background: #80be90;
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+}
