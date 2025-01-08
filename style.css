@@ -127,7 +127,10 @@ header {
 
     color: #ffffff;
 
+    padding-left: 30px;
     display: grid;
+    justify-content: start;
+    grid-auto-rows: min-content;
 }
 
 .sidebar a {
@@ -139,8 +142,8 @@ header {
     grid-row: 1 / 2;
 
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    justify-items: center;
+    grid-template-columns: min-content auto;
+    grid-auto-rows: min-content;
     align-items: center;
     gap: 20px;
 
@@ -150,7 +153,6 @@ header {
 
 .sidebar .logo-link .icon {
     grid-column: 1 / 2;
-    justify-self: end;
     
     width: 36px;
     height: 36px;
@@ -165,13 +167,12 @@ header {
 }
 
 .sidebar .nav {
-    padding-left: 30px;
-
     grid-row: 2 / 3;
 }
 
 .sidebar .nav li  {
     display: grid;
+    grid-template-columns: min-content min-content;
     align-items: center;
     justify-content: start;
     gap: 20px;
