@@ -88,6 +88,7 @@
 
 html {
     font-size: 16px;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
 }
 
 body, html {
@@ -100,7 +101,7 @@ ul {
 
 .container {
     display: grid;
-    grid-template-rows: 150px 208px 1692px;
+    grid-template-rows: 75px 104px 846px;
     grid-template-columns: 1fr 4fr;
 }
 
@@ -124,6 +125,62 @@ header {
     grid-column: 1 / 2;
 
     color: #ffffff;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.sidebar .logo-link {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+.sidebar .logo-link .icon {
+    width: 36px;
+    height: 36px;
+    background: #ffffff;
+
+    grid-column: 1 / 2;
+}
+.sidebar .logo-link .title {
+    font-size: 1.75rem; /*28px*/
+    font-weight: bold;
+
+    grid-column: 2 / 3;
+}
+
+.sidebar .nav {
+    padding-left: 30px;
+}
+
+.sidebar .nav li  {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+    margin-bottom: 24px;
+}
+
+.sidebar .nav > li:nth-child(1) {
+    margin-top: 60px;
+}
+
+.sidebar .nav > li:nth-child(7) {
+    margin-top: 90px;
+}
+
+.sidebar .nav li p {
+    font-size: 1.375rem; /*22px*/
+    font-weight: bold;
+}
+
+.sidebar .nav li img {
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
 }
 
 main {
