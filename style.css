@@ -229,7 +229,7 @@ main {
     border-radius: 8px;
     border-left: 10px solid #f0b429;
     padding-left: 30px;
-    padding-right: 40px;
+    padding-right: 20px;
     padding-top: 36px;
 }
 
@@ -237,6 +237,7 @@ main {
     color: var(--color-text-gray);
     font-size: 1rem;
     font-weight: normal;
+    line-height: 1.25rem;
 }
 
 .projects .card p.title {
@@ -253,19 +254,62 @@ main {
 .announcements > .card {
     background-color: var(--color-background-light);
     border-radius: 8px;
-    padding: 32px;
+    padding: 15px 26px;
     margin-right: 34px;
     margin-top: 16px;
+
+    display: grid;
+    grid-auto-rows: 98px;
+}
+
+.announcements > .card > .division {
+    padding: 20px 16px;
+    /* overflow: hidden; */
+    /* text-overflow: ellipsis; */
+    /* https://css-tricks.com/almanac/properties/l/line-clamp/ almanac entry for line-clamp - but not good browser support*/
+    /* https://codepen.io/zachhanding/pen/MKyVPq cross browser pure css solution with utility classes*/
 }
 
 .announcements > .card p.title {
     font-size: 0.875rem; /* 14px */
     font-weight: bold;
     color: var(--color-text-normal);
+    margin-bottom: 0.5rem;
 }
 
 .announcements > .card p {
     font-size: 0.75rem; /* 12px */
     font-weight: normal;
     color: var(--color-text-gray);
+
+}
+
+.trending {
+    background-color: var(--color-background-default);
+    padding-top: 36px;
+}
+
+.trending > .card {
+    background-color: var(--color-background-light);
+    border-radius: 8px;
+    padding: 32px;
+    margin-right: 34px;
+    margin-top: 16px;
+}
+
+.trending > .card p.title {
+    font-size: 0.875rem; /* 14px */
+    font-weight: bold;
+    color: var(--color-text-normal);
+}
+
+.trending > .card p {
+    font-size: 0.75rem; /* 12px */
+    font-weight: normal;
+    color: var(--color-text-gray);
+}
+
+.trending > .card img {
+    width: 48px;
+    height: 48px;
 }
