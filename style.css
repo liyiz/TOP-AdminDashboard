@@ -203,6 +203,7 @@ main {
 
     display: grid;
     grid-template: 1fr 1fr / 2.5fr 1fr;
+    gap: 22px;
 }
 
 .projects {
@@ -242,4 +243,29 @@ main {
     color: var(--color-text-normal);
     font-size: 1.125rem;
     font-weight: bold;
+}
+
+.announcements {
+    background-color: var(--color-background-default);
+    padding-top: 36px;
+}
+
+.announcements > .card {
+    background-color: var(--color-background-light);
+    border-radius: 8px;
+    padding: 32px;
+    margin-right: 34px;
+    margin-top: 16px;
+}
+
+.announcements > .card p.title {
+    font-size: 0.875rem; /* 14px */
+    font-weight: bold;
+    color: var(--color-text-normal);
+}
+
+.announcements > .card p {
+    font-size: 0.75rem; /* 12px */
+    font-weight: normal;
+    color: var(--color-text-gray);
 }
