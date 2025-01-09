@@ -249,13 +249,15 @@ main {
 .announcements {
     background-color: var(--color-background-default);
     padding-top: 36px;
+
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
 }
 
 .announcements > .card {
     background-color: var(--color-background-light);
     border-radius: 8px;
     padding: 32px 28px;
-    padding-bottom: 12px;
     margin-right: 34px;
     margin-top: 16px;
 
@@ -294,25 +296,40 @@ main {
 
 .trending {
     background-color: var(--color-background-default);
-    padding-top: 36px;
+    padding-top: 18px;
+/* in addition to gap: 22px in .main  */
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
 }
 
 .trending > .card {
     background-color: var(--color-background-light);
     border-radius: 8px;
-    padding: 32px;
-    margin-right: 34px;
+    padding: 22px 28px;
     margin-top: 16px;
+    margin-right: 34px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
 }
 
-.trending > .card p.title {
+.trending > .card > .division {
+    display: grid;
+    grid-template-columns: min-content auto;
+    grid-auto-rows: min-content;
+    align-items: center;
+    gap: 18px;
+}
+
+.trending > .card .user {
     font-size: 0.875rem; /* 14px */
-    font-weight: bold;
+    font-weight: normal;
     color: var(--color-text-normal);
 }
 
-.trending > .card p {
-    font-size: 0.75rem; /* 12px */
+.trending > .card .project {
+    font-size: 0.875rem; /* 12px */
     font-weight: normal;
     color: var(--color-text-gray);
 }
