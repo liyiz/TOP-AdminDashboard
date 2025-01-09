@@ -264,7 +264,7 @@ main {
 
 .announcements > .card > .division {
     padding: 20px 16px;
-    /* overflow: hidden; */
+    overflow: hidden;
     /* text-overflow: ellipsis; */
     /* https://css-tricks.com/almanac/properties/l/line-clamp/ almanac entry for line-clamp - but not good browser support*/
     /* https://codepen.io/zachhanding/pen/MKyVPq cross browser pure css solution with utility classes*/
