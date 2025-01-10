@@ -110,7 +110,14 @@ header {
     background: var(--color-background-light);
     grid-row: 1 / 2;
     grid-column: 2 / 3;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
 }
+
+
+
+
 
 .banner {
     background: var(--color-background-light);
@@ -333,6 +340,11 @@ main {
     font-size: 0.875rem; /* 12px */
     font-weight: normal;
     color: var(--color-text-gray);
+}
+
+.trending > .card .avatar {
+    width: 48px;
+    height: 48px;
 }
 
 .trending > .card img {
