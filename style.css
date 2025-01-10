@@ -112,11 +112,31 @@ header {
     grid-column: 2 / 3;
 
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
 }
 
+header search {
+    border: 1px solid red;
+}
 
+header .icon.notifications {
+    width: 48px;
+    height: 48px;
+    border: 1px solid red;
 
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+header .avatar {
+    border: 1px solid red;
+}
+
+header .username {
+    border: 1px solid red;
+}
 
 
 .banner {
