@@ -112,7 +112,7 @@ header {
     grid-column: 2 / 3;
 
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr auto auto auto;
     align-items: center;
 }
 
@@ -132,10 +132,14 @@ header .icon.notifications {
 
 header .avatar {
     border: 1px solid red;
+    width: 48px;
+    height: 48px;
 }
 
 header .username {
     border: 1px solid red;
+    font-size: 1.125rem; /* 18px */
+    font-weight: bold;
 }
 
 
@@ -145,6 +149,18 @@ header .username {
     grid-column: 2 / 3;
     
     color: var(--color-text-normal);
+
+    display: grid;
+    grid-template-columns: min-content repeat(4, auto);
+    align-items: center;
+}
+
+
+.banner .avatar {
+    border: 1px solid red;
+    width: 72px;
+    height: 72px;
+    justify-self: center;
 }
 
 .sidebar {
