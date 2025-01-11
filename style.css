@@ -122,6 +122,7 @@ header {
     display: grid;
     grid-template-columns: 1fr auto auto auto;
     align-items: center;
+    gap: 1rem;
 }
 
 header search {
@@ -150,6 +151,21 @@ header .username {
     font-weight: bold;
 }
 
+header button {
+    width: 32px;
+    height: 32px;
+    background: none; /* reset from default */
+}
+
+header input {
+    appearance: none;
+    border: none;
+    background-color: var(--color-background-default);
+    border-radius: 1rem;
+    width: 600px;
+    height: 30px;
+    padding: 0 10px;
+}
 
 .banner {
     background: var(--color-background-light);
