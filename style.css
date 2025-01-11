@@ -75,6 +75,7 @@
 
 :root {
     --color-text-normal: #000000;
+    --color-text-white: #ffffff;
     --color-text-gray: #636363;
     --color-brand: #1992d4;
     --color-background-default: #e2e8f0;
@@ -100,6 +101,11 @@ ul {
     list-style-type: none;
 }
 
+button {
+    border: none;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
+
 .container {
     display: grid;
     grid-template-rows: 75px 104px 846px;
@@ -110,6 +116,8 @@ header {
     background: var(--color-background-light);
     grid-row: 1 / 2;
     grid-column: 2 / 3;
+
+    padding: 0 48px;
 
     display: grid;
     grid-template-columns: 1fr auto auto auto;
@@ -150,9 +158,12 @@ header .username {
     
     color: var(--color-text-normal);
 
+    padding: 0 48px;
+
     display: grid;
-    grid-template-columns: min-content repeat(4, auto);
+    grid-template-columns: min-content auto min-content min-content min-content;
     align-items: center;
+    gap: 24px;
 }
 
 
@@ -161,6 +172,26 @@ header .username {
     width: 72px;
     height: 72px;
     justify-self: center;
+}
+
+.banner button {
+
+    background-color: var(--color-brand);
+    border-radius: 20px;
+    color: var(--color-text-white);
+    width: 100px;
+    height: 40px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.banner .message p:nth-child(1) {
+    font-size: 0.875rem; /* 14px */
+    font-weight: bold;
+}
+.banner .message p:nth-child(2) {
+    font-size: 1.5rem; /* 24px */
+    font-weight: bold;
 }
 
 .sidebar {
