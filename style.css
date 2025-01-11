@@ -125,18 +125,27 @@ header {
     gap: 1rem;
 }
 
-header search {
-    border: 1px solid red;
+header search form {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
 }
 
 header .icon.notifications {
     width: 48px;
     height: 48px;
-    border: 1px solid red;
 
     display: grid;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    
+}
+
+header .icon.notifications svg {
+    width: 24px;
+    height: 24px;
 }
 
 header .avatar {
