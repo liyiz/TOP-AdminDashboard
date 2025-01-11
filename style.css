@@ -244,7 +244,7 @@ header input {
     grid-template-columns: min-content auto;
     grid-auto-rows: min-content;
     align-items: center;
-    gap: 12px;
+    gap: 20px;
 
     margin-top: 24px;
     margin-bottom: 62px;
