@@ -149,13 +149,15 @@ header .icon.notifications svg {
 }
 
 header .avatar {
-    border: 1px solid red;
     width: 48px;
     height: 48px;
+    border-radius: 36px;
+    background-image: url('./img/avatar_morgan.jpg');
+    background-position: center;
+    background-size: 100%;
 }
 
 header .username {
-    border: 1px solid red;
     font-size: 1.125rem; /* 18px */
     font-weight: bold;
 }
@@ -193,10 +195,12 @@ header input {
 
 
 .banner .avatar {
-    border: 1px solid red;
     width: 72px;
     height: 72px;
     justify-self: center;
+    border-radius: 36px;
+    background-image: url('./img/avatar_morgan.jpg');
+    background-position: center;
 }
 
 .banner button {
