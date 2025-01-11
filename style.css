@@ -162,10 +162,11 @@ header .username {
     font-weight: bold;
 }
 
-header button {
+header > search button {
     width: 32px;
     height: 32px;
     background: none; /* reset from default */
+    cursor: pointer;
 }
 
 header input {
