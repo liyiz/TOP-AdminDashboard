@@ -312,7 +312,7 @@ main {
 
     display: grid;
     grid-template: 1fr 1fr / 2.5fr 1fr;
-    gap: 22px;
+    /* gap: 22px; */
 }
 
 .projects {
@@ -338,8 +338,9 @@ main {
     border-radius: 8px;
     border-left: 10px solid #f0b429;
     padding-left: 30px;
-    padding-right: 20px;
+    padding-right: 30px;
     padding-top: 36px;
+    padding-bottom: 30px;
 }
 
 .projects .card p {
@@ -353,6 +354,10 @@ main {
     color: var(--color-text-normal);
     font-size: 1.125rem;
     font-weight: bold;
+}
+
+.projects .card .star {
+    background-image: url(icons/star-plus-outline.svg);
 }
 
 .announcements {
