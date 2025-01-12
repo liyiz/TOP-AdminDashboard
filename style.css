@@ -356,8 +356,24 @@ main {
     font-weight: bold;
 }
 
+.projects .card button {
+    background: none;
+    width: 24px;
+    height: 24px;
+    background-size: 100%;
+    background-position: center;
+}
+
 .projects .card .star {
     background-image: url(icons/star-plus-outline.svg);
+}
+
+.projects .card .watch {
+    background-image: url(icons/eye-plus-outline.svg);
+}
+
+.projects .card .fork {
+    background-image: url(icons/source-fork.svg);
 }
 
 .announcements {
