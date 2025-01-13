@@ -195,8 +195,11 @@ header input {
     grid-template-columns: min-content auto min-content min-content min-content;
     align-items: center;
     gap: 24px;
-}
+    
 
+    box-shadow: 0 8px 12px -10px rgba(0, 0, 0, 0.5); 
+    z-index: 2; /* z-index has to be manipulated because .banner is rendered over by other elements in html*/
+}
 
 .banner .avatar {
     width: 72px;
@@ -205,6 +208,8 @@ header input {
     border-radius: 36px;
     background-image: url('./img/avatar_morgan.jpg');
     background-position: center;
+
+    
 }
 
 .banner button {
@@ -316,6 +321,7 @@ main {
     display: grid;
     grid-template: min-content min-content / 2.5fr 1fr;
     gap: 22px;
+
 }
 
 .projects {
@@ -412,6 +418,7 @@ main {
     display: grid;
     gap: 30px;
     grid-template-rows: min-content min-content;
+
 }
 
 .announcements > .card {
